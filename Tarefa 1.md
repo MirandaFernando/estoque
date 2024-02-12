@@ -19,6 +19,9 @@ Para a tarefa de incluir um novo produto no sistema de gestão de estoque, você
     - Se o produto for incluído com sucesso, a API deve retornar uma resposta com status `201 CREATED` e uma mensagem indicando sucesso.
     - Em caso de falha na inclusão do produto (por exemplo, se as validações falharem ou ocorrer um erro no servidor), a API deve retornar uma resposta com status `500 INTERNAL SERVER ERROR` e uma mensagem de erro adequada.
 
+5. **duvidas que podem surgir**
+   - A arquitetura do projeto é mvc
+   - você pode seguir o seguinte fluxo: Criar endpoint na controller -> criar o request "IncluirProdutoRequest.java -> criar o service "IncluirProdutoService.java"-> criar o mapper
 ### Entrega
 
 O código deverá ser desenvolvido tanto com o auxílio do GitHub Copilot quanto sem ele, permitindo uma comparação direta em termos de produtividade e qualidade do código produzido. Documente o processo de desenvolvimento, incluindo quaisquer desafios encontrados e como foram solucionados, e faça uma reflexão crítica sobre a experiência de usar o Copilot para esta tarefa.
